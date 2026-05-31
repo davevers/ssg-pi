@@ -39,8 +39,9 @@
             packages = [
               pkgs.python3
               pkgs.uv
+              pkgs.ruff
+              pkgs.ty
               pkgs.bootdev-cli
-              pkgs.fish
             ];
 
             env = lib.optionalAttrs pkgs.stdenv.isLinux {
